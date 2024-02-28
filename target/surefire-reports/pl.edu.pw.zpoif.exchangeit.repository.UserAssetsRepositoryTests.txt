@@ -1,0 +1,91 @@
+-------------------------------------------------------------------------------
+Test set: pl.edu.pw.zpoif.exchangeit.repository.UserAssetsRepositoryTests
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 0.100 s <<< FAILURE! -- in pl.edu.pw.zpoif.exchangeit.repository.UserAssetsRepositoryTests
+pl.edu.pw.zpoif.exchangeit.repository.UserAssetsRepositoryTests.testFindBySymbol -- Time elapsed: 0.013 s <<< ERROR!
+org.springframework.dao.IncorrectResultSizeDataAccessException: Query did not return a unique result: 4 results were returned
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:301)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:244)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:249)
+	at jdk.proxy2/jdk.proxy2.$Proxy120.findBySymbol(Unknown Source)
+	at pl.edu.pw.zpoif.exchangeit.repository.UserAssetsRepositoryTests.testFindBySymbol(UserAssetsRepositoryTests.java:116)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.hibernate.NonUniqueResultException: Query did not return a unique result: 4 results were returned
+	at org.hibernate.query.spi.AbstractSelectionQuery.uniqueElement(AbstractSelectionQuery.java:586)
+	at org.hibernate.query.spi.AbstractSelectionQuery.getSingleResult(AbstractSelectionQuery.java:570)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:223)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:92)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:149)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 11 more
+
+pl.edu.pw.zpoif.exchangeit.repository.UserAssetsRepositoryTests.testFindAllByUserId -- Time elapsed: 0.019 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected size:<1> but was:<8> in:
+<[pl.edu.pw.zpoif.exchangeit.model.user.UserAssets@5ccc07ae,
+    pl.edu.pw.zpoif.exchangeit.model.user.UserAssets@1c7da28,
+    pl.edu.pw.zpoif.exchangeit.model.user.UserAssets@27bfa57f,
+    pl.edu.pw.zpoif.exchangeit.model.user.UserAssets@39b50027,
+    pl.edu.pw.zpoif.exchangeit.model.user.UserAssets@24c4370a,
+    pl.edu.pw.zpoif.exchangeit.model.user.UserAssets@1b6daf20,
+    pl.edu.pw.zpoif.exchangeit.model.user.UserAssets@41a3656f,
+    pl.edu.pw.zpoif.exchangeit.model.user.UserAssets@5086e144]>
+	at pl.edu.pw.zpoif.exchangeit.repository.UserAssetsRepositoryTests.testFindAllByUserId(UserAssetsRepositoryTests.java:102)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+pl.edu.pw.zpoif.exchangeit.repository.UserAssetsRepositoryTests.testUpdateUserAssetsBuySell -- Time elapsed: 0.014 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+Expecting:
+ <16042.0>
+to be equal to:
+ <3500.0>
+but was not.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at pl.edu.pw.zpoif.exchangeit.repository.UserAssetsRepositoryTests.testUpdateUserAssetsBuySell(UserAssetsRepositoryTests.java:144)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+pl.edu.pw.zpoif.exchangeit.repository.UserAssetsRepositoryTests.testGetTotalAssetsValue -- Time elapsed: 0.006 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+Expecting:
+ <19042.0>
+to be equal to:
+ <3000.0>
+but was not.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at pl.edu.pw.zpoif.exchangeit.repository.UserAssetsRepositoryTests.testGetTotalAssetsValue(UserAssetsRepositoryTests.java:166)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

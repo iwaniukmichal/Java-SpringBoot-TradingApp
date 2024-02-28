@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: pl.edu.pw.zpoif.exchangeit.repository.UserHistoryRepositoryTests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.039 s <<< FAILURE! -- in pl.edu.pw.zpoif.exchangeit.repository.UserHistoryRepositoryTests
+pl.edu.pw.zpoif.exchangeit.repository.UserHistoryRepositoryTests.testFindAllByUserId -- Time elapsed: 0.014 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected size:<2> but was:<6> in:
+<[pl.edu.pw.zpoif.exchangeit.model.user.UserHistory@60ddad4,
+    pl.edu.pw.zpoif.exchangeit.model.user.UserHistory@2d9cc10,
+    pl.edu.pw.zpoif.exchangeit.model.user.UserHistory@3bc82aa3,
+    pl.edu.pw.zpoif.exchangeit.model.user.UserHistory@38769b6c,
+    pl.edu.pw.zpoif.exchangeit.model.user.UserHistory@4a3363c9,
+    pl.edu.pw.zpoif.exchangeit.model.user.UserHistory@7b88dd58]>
+	at pl.edu.pw.zpoif.exchangeit.repository.UserHistoryRepositoryTests.testFindAllByUserId(UserHistoryRepositoryTests.java:96)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

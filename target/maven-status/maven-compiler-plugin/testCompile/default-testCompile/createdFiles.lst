@@ -1,0 +1,13 @@
+pl/edu/pw/zpoif/exchangeit/controller/TradingDataControllerTests$1.class
+pl/edu/pw/zpoif/exchangeit/repository/UserHistoryRepositoryTests.class
+pl/edu/pw/zpoif/exchangeit/controller/TradingDataControllerTests$AdditionalValidator.class
+pl/edu/pw/zpoif/exchangeit/controller/TradingDataControllerTests$2.class
+pl/edu/pw/zpoif/exchangeit/controller/TradingDataControllerTests$2$1.class
+pl/edu/pw/zpoif/exchangeit/controller/TradingDataControllerTests.class
+pl/edu/pw/zpoif/exchangeit/models/ControllerTest.class
+pl/edu/pw/zpoif/exchangeit/repository/ControllerTestsRepository.class
+pl/edu/pw/zpoif/exchangeit/repository/UserTradingRepositoryTests.class
+pl/edu/pw/zpoif/exchangeit/service/TestDataBaseService.class
+pl/edu/pw/zpoif/exchangeit/ExchangeitApplicationTests.class
+pl/edu/pw/zpoif/exchangeit/repository/UserRepositoryTests.class
+pl/edu/pw/zpoif/exchangeit/repository/UserAssetsRepositoryTests.class
