@@ -31,7 +31,7 @@ ExchangeIt is a web application designed as a simple stock exchange simulator, p
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/Java-SpringBoot-TradingApp.git
+    git clone https://github.com/iwaniukmichal/Java-SpringBoot-TradingApp.git
     cd Java-SpringBoot-TradingApp
     ```
 
